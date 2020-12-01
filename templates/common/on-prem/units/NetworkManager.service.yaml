@@ -1,0 +1,6 @@
+name: NetworkManager.service
+dropins:
+- name: mco-onprem-proxy.conf
+  contents: |
+    [Service]
+    EnvironmentFile=/etc/mco/proxy-env
